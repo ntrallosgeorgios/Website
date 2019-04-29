@@ -1,0 +1,495 @@
+/*
+  filename: style.css
+  author: Georgios
+  created: 12/8/2017
+  last modified: 12/8/2017
+  description:lab03.html
+*/
+
+
+/* Apply for all body */
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+
+/* default header for all pages */
+
+header {
+    /*  https://www.w3schools.com/cssref/css3_pr_border-radius.asp */
+    border-bottom-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+    /* horizontal vertical bluer color */
+    /* https://www.w3schools.com/cssref/css3_pr_box-shadow.asp */
+    box-shadow: 0em 0em 1em gray;
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    /* fixed the problem with the menu when the page resized */
+    background-image: url(images/header.jpg);
+    /* https://www.w3schools.com/cssref/css3_pr_background-size.asp */
+    background-size: contain;
+    /* https://www.w3schools.com/cssref/pr_background-position.asp */
+    background-position: center;
+}
+
+#headTitle {
+    position: fixed;
+    font-family: 'Indie Flower', cursive, sans-serif;
+    font-size: 40px;
+    text-decoration: none;
+    text-align: center;
+    color: black;
+    top: 0.60em;
+    /* create shadow at the text of the near the logo */
+    text-shadow: 2px 2px 3px gray;
+}
+
+header>a {
+    width: 20%;
+    float: left;
+    position: relative;
+}
+
+
+/* style to the navigation bar */
+
+nav {
+    margin-top: 5em;
+    float: left;
+    width: 75%;
+    top: 0;
+}
+
+nav ul {
+    padding: 0
+}
+
+nav ul li {
+    list-style-type: none;
+    background: white;
+    float: left;
+}
+
+.navlink {
+    display: block;
+    font-weight: bold;
+    padding: .4em 3.5em;
+    text-decoration: none;
+    color: #000;
+}
+
+
+/* style inside of the button */
+
+.inBut {
+    /* https://www.w3schools.com/cssref/css3_pr_box-shadow.asp */
+    box-shadow: 0em 0em 1em gray;
+}
+
+
+/* style to the left button*/
+
+#lftBut {
+    /* https://www.w3schools.com/cssref/css3_pr_box-shadow.asp */
+    box-shadow: 0em 0em 1em gray;
+    /*  https://www.w3schools.com/cssref/css3_pr_border-radius.asp */
+    border-top-left-radius: 14px;
+    border-bottom-left-radius: 14px;
+}
+
+#inButEn {
+    background-color: black;
+    color: white;
+    /* https://www.w3schools.com/cssref/css3_pr_box-shadow.asp */
+    box-shadow: 0em 0em 1em gray;
+}
+
+
+/* style to the right button*/
+
+#righBut {
+    background-color: black;
+    padding-left: 3px;
+    padding-right: 6px;
+    color: white;
+    /*  https://www.w3schools.com/cssref/css3_pr_border-radius.asp */
+    border-top-right-radius: 14px;
+    border-bottom-right-radius: 14px;
+    /* https://www.w3schools.com/cssref/css3_pr_box-shadow.asp */
+    box-shadow: 0em 0em 1em gray;
+}
+
+
+/* When the mouse hover the buttons */
+
+.navlink:hover {
+    background: #8B8A8A;
+    color: #FFFFFF;
+}
+
+
+/* style the footer */
+
+footer {
+    font-size: 13px;
+    font-style: italic;
+    background-color: #E4E4E4;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    padding: 1.2em;
+    margin-top: 2em;
+    /* https://www.w3schools.com/cssref/css3_pr_box-shadow.asp */
+    box-shadow: 0em 0em 2em gray;
+    text-align: center;
+}
+
+#footSpanLink {
+    color: #4C5452;
+    text-decoration: none;
+}
+
+#footSpanLink:hover {
+    color: red;
+}
+
+
+/* manipulate Home page content */
+
+#homepage {
+    text-align: justify;
+    margin-right: 2em;
+    margin-left: 2em;
+    /* Stretches the lines so that each line has equal width */
+    padding-top: 9em;
+}
+
+
+/* style h1 */
+
+#hhom {
+    font-family: 'Indie Flower', cursive, sans-serif;
+    text-align: center;
+    font-size: 2.5em;
+    padding-bottom: .5em;
+}
+
+
+/* stely the paragraph */
+
+#phom {
+    background: #E4E4E4;
+    text-align: center;
+    font-size: 1.1em;
+    /* https://www.w3schools.com/cssref/css3_pr_box-shadow.asp */
+    box-shadow: 0em 0em 2em gray;
+    /*  https://www.w3schools.com/cssref/css3_pr_border-radius.asp */
+    border-radius: 50px;
+    padding: 50px;
+}
+
+
+/* css for jobs webpage */
+
+#jobs {
+    margin-right: 2em;
+    margin-left: 2em;
+    padding-top: 8em;
+    padding-bottom: 5em;
+}
+
+.sections {
+    margin: 1em 1em 1em 1em;
+}
+
+
+/* style h1 */
+
+.JobHead1 {
+    font-size: 1.9em;
+    font-weight: bold;
+    font-variant: initial;
+    font-family: arial, serif, sans-serif, monospace;
+    margin-bottom: .3em;
+}
+
+
+/* style h2 */
+
+.JobHead2 {
+    font-size: 1.4em;
+    font-weight: bold;
+    font-variant: initial;
+    font-family: arial, serif, sans-serif, monospace;
+    margin-top: .2em;
+}
+
+
+/* style the lists <ol> & <ul> */
+
+.lists {
+    margin-left: 2em;
+    margin-top: .2em;
+}
+
+
+/* make the distance at the bottom of the lists */
+
+li.lists {
+    margin-bottom: .1em;
+}
+
+
+/* manipulate job description 1 */
+
+#arcJob1 {
+    font-size: 14px;
+    text-align: justify;
+    width: 70%;
+    float: left;
+    margin-bottom: 1em;
+}
+
+
+/* manipulate job description 2 */
+
+#arcJob2 {
+    font-size: 14px;
+    text-align: justify;
+    width: 70%;
+    margin-top: 2em;
+    float: left;
+    margin-bottom: 5%;
+    border-top: 1px solid gray;
+    /* https://www.w3schools.com/cssref/css3_pr_box-shadow.asp */
+    box-shadow: 0 -5px 5px -5px #333;
+    padding-top: 5px;
+}
+
+
+/* style the aside and put it at the right of the webpage */
+
+.asJob {
+    font-size: 14px;
+    text-align: center;
+    width: 25%;
+    float: right;
+    border: 2px inset #E4E4E4;
+    /* https://www.w3schools.com/cssref/css3_pr_box-shadow.asp */
+    box-shadow: 0em 0em 3em gray;
+    /*  https://www.w3schools.com/cssref/css3_pr_border-radius.asp */
+    border-radius: 14px;
+    margin: 1em;
+    padding: 1em;
+}
+
+
+/* give space to the paragraphs */
+
+.jobPara {
+    margin-top: 0.3em;
+    margin-bottom: 0.3em;
+}
+
+
+/* manipulate apply */
+
+#applPage {
+    margin-right: 2em;
+    margin-left: 2em;
+    padding-top: 8em;
+    padding-bottom: 5em;
+}
+
+#mainSect {
+    margin-top: 1.2em;
+    background: #E4E4E4;
+    padding: 1.5em 0em 20em 2em;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    /*  https://www.w3schools.com/cssref/css3_pr_border-radius.asp */
+    border-radius: 15px;
+    /* box-shadow: 0em 0em 1em gray; */
+    box-shadow: 0 -5px 5px -5px #333;
+}
+
+
+/* left article */
+
+#leftAr {
+    width: 25%;
+    float: left;
+    margin-right: -6em;
+}
+
+#leftAr>p {
+    padding: 0.2em;
+    margin-top: 0.2em;
+    margin-bottom: 0.3em;
+}
+
+#leftAr fieldset {
+    width: 25%;
+    padding: 1em;
+    margin-top: 1em;
+}
+
+
+/* middle article */
+
+#midArt {
+    width: 30%;
+    float: left;
+    margin-right: -6em;
+}
+
+#midArt>p {
+    padding: 0.2em;
+    margin-top: 0.2em;
+    margin-bottom: 0.3em;
+}
+
+#midArt>p>select {
+    align-content: center;
+}
+
+
+/* right article */
+
+#rightArt {
+    width: 30%;
+    float: left;
+    margin-right: -6em;
+}
+
+#rightArt>p {
+    margin-top: 0.4em;
+    margin-bottom: 0.3em;
+}
+
+#sk {
+    margin-top: 0.4em;
+    margin-bottom: 0.3em;
+}
+
+
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/:focus */
+
+input:focus {
+    color: black;
+}
+
+
+/* style About page */
+
+#aboutPage {
+    margin-right: 2em;
+    margin-left: 2em;
+    padding-top: 9em;
+    padding-bottom: 5em;
+}
+
+
+/* definition list */
+
+dl {
+    margin-left: 2em;
+    padding-top: 2em;
+    float: left;
+    width: 45%;
+}
+
+dt {
+    float: left;
+    width: 25%;
+    font-weight: bold;
+}
+
+figure>img {
+    margin-bottom: 1em;
+    border: 2px solid black;
+    /* https://www.w3schools.com/cssref/css3_pr_box-shadow.asp */
+    box-shadow: 0em 0 1em 0.1em black;
+}
+
+
+/* https://www.w3schools.com/css/css_table.asp  until line 426 */
+
+#tableAb {
+    clear: both;
+    margin: 0 auto;
+    border-collapse: collapse;
+    width: 50%;
+}
+
+caption {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+th {
+    background-color: #E4E4E4;
+    color: black;
+}
+
+th,
+td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+#errMess {
+    clear: both;
+    color: red;
+}
+
+
+/* slideshow manipulation*/
+
+#slidShow {
+    padding: 2em;
+    width: 50%;
+    height: 250px;
+    /*margin-left: 10%;
+    margin-right: 10%; */
+    margin: 0 auto;
+    overflow: hidden;
+    opacity: 1;
+}
+
+.ItSlideShow {
+    width: 100%;
+    height: 250px;
+    margin-bottom: 1em;
+    border: 2px solid black;
+    /* https://www.w3schools.com/cssref/css3_pr_box-shadow.asp */
+    box-shadow: 0em 0 1em 0.1em black;
+}
+
+
+/* Here we  define the animation*/
+
+.fSlid {
+    /* we call the rule fadinSLide every 1 sec */
+    animation: fadinSLide 1s;
+}
+
+
+/* here we have the rule to the slideshow
+* that lead the opasite from 0.3 to 1
+*/
+
+@keyframes fadinSLide {
+    from {
+        opacity: .3;
+    }
+    to {
+        opacity: 1;
+    }
+}
